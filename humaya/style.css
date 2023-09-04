@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: #232323;
+  height: 70px;
+  display: flex;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#logoheader {
+  background-image: url(./images/logo.png);
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: cover;
+}
+#hero {
+  height: calc(100vh - 70px);
+  width: 100%;
+  background-image: url(./images/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+}
+
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  margin-right: 30px;
+}
+
+.btn-conocenos {
+  background-color: #232323;
+  color: white;
+  height: 60px;
+  width: 180px;
+  border-radius: 50px;
+  border-style: none;
+  font-size: 20px;
+}
+
+.btn-conocenos:hover {
+  cursor: pointer;
+}
+
+.titulo-hero {
+  font-size: 50px;
+}
+
+.main-descripcion {
+  font-size: 30px;
+}
+
+#productos {
+  background-color: #232323;
+}
+
+.title {
+  background-color: #232323;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h3 {
+  color: white;
+}
+
+article {
+  width: 100%;
+  height: calc(25% - 15px);
+  display: flex;
+  flex-direction: row;
+}
+
+section article:nth-child(2),
+section article:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
+article img {
+  max-width: 50%;
+  width: 50%;
+  image-rendering: initial;
+}
+
+.infoproducto {
+  width: 50%;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: beige;
+}
+
+.infoproducto h4 {
+  font-size: 26px;
+}
+
+.infoproducto h4,
+strong {
+  color: #bca177;
+}
+
+.infoproducto p {
+  max-width: 70%;
+}
+
+.infoproducto button {
+  background-color: #121212;
+  color: #bca177;
+  border-color: #bca177;
+  width: 80px;
+  height: 40px;
+  border-style: none;
+  border: 3px solid #bca177;
+}
+
+#calidad {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #232323;
+  color: #bca177;
+}
+
+#calidad h3 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+#calidad ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: #232323;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #bca177;
+}
+
+#calidad ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#calidad li img {
+  width: 80px;
+  height: auto;
+
+  margin-bottom: 10px;
+}
