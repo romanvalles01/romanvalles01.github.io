@@ -4,6 +4,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  background-color: #0c0c0c;
+}
+
 header {
   background-color: #232323;
   height: 70px;
@@ -85,9 +89,15 @@ nav ul li a {
 
 #productos {
   background-color: #232323;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .title {
+  width: 100%;
   background-color: #232323;
   height: 60px;
   display: flex;
@@ -179,6 +189,7 @@ strong {
 }
 
 #calidad ul li {
+  align-items: center;
   list-style: none;
   display: flex;
   justify-content: center;
