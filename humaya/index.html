@@ -40,7 +40,7 @@
         <h3>PRODUCTOS</h3>
       </div>
       <section id="productos">
-        <article>
+        <article id="producto">
           <img class="producto1" src="./images/p1.png" alt="" />
           <div class="infoproducto">
             <h4>DULCE DE LECHE TRADICIONAL</h4>
@@ -52,7 +52,7 @@
             <button class="btn-info">+ INFO</button>
           </div>
         </article>
-        <article>
+        <article id="producto">
           <img class="producto1" src="./images/p2.png" alt="" />
           <div class="infoproducto">
             <h4>DULCE DE LECHE SIN AZÚCAR</h4>
@@ -64,7 +64,7 @@
             <button class="btn-info">+ INFO</button>
           </div>
         </article>
-        <article>
+        <article id="producto">
           <img src="./images/p3.png" alt="" />
           <div class="infoproducto">
             <h4>DULCE CHOCONUTT</h4>
@@ -76,7 +76,7 @@
             <button class="btn-info">+ INFO</button>
           </div>
         </article>
-        <article>
+        <article id="producto">
           <img src="./images/p4.png" alt="" />
           <div class="infoproducto">
             <h4>ALFAJORES DE MAICENA</h4>
@@ -107,53 +107,110 @@
           </li>
         </ul>
       </section>
+      <div class="title">
+        <h3 class="contactanos">CONTÁCTANOS</h3>
+      </div>
+
       <section id="contacto">
-        <h1>Contáctanos</h1>
-        <div>
-          <img src="" alt="" />
-          <form action="">
-            <p>
+        <img src="./images/contactoimg.png" alt="" />
+        <form action="">
+          <p>
+            <strong>
               Déjanos tu consulta y nuestro personal se pondrá en contacto a la
-              brevedad
-            </p>
-          </form>
-        </div>
-      </section>
-      <section id="recetas">
-        <h1>Recetas</h1>
-        <div class="lirecetas">
+              brevedad</strong
+            >
+          </p>
           <div>
-            <img src="" alt="" />
+            <p>NOMBRE</p>
+            <input type="text" />
+          </div>
+          <div>
+            <p>E - MAIL</p>
+            <input type="text" />
+          </div>
+          <div>
+            <p>CONSULTA:</p>
+            <textarea class="consulta" name="" id=""></textarea>
+          </div>
+
+          <button id="btnform"><strong>ENVIAR</strong></button>
+        </form>
+      </section>
+      <div class="title"><h3>RECETAS</h3></div>
+      <section id="recetas">
+        <div class="lirecetas">
+          <div class="recetacard">
+            <img src="./images/conito.png" alt="" />
             <h3>CONITOS</h3>
             <p>
               Una deliciosa opción para acompañar las meriendas, ese antojo de
               media noche o compartir con amigos.
             </p>
-            <button>PREPARACIÓN</button>
+            <button id="btnreceta">PREPARACIÓN</button>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div class="recetacard">
+            <img src="./images/pepas.png" alt="" />
             <h3>PEPAS</h3>
             <p>
               Las galletitas más tiernas y ricas, rellenas de dulce de leche,
               idelaes para el mate y la hora del té.
             </p>
-            <button>PREPARACIÓN</button>
+            <button id="btnreceta">PREPARACIÓN</button>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div class="recetacard">
+            <img src="./images/torta.png" alt="" />
             <h3>TORTA NUTT</h3>
             <p>
               La torta de tres capas más sabrosa del mundo, combina una base de
               vainilla, dulce de leche y cubierta de choconutt.
             </p>
-            <button>PREPARACIÓN</button>
+            <button id="btnreceta">PREPARACIÓN</button>
           </div>
         </div>
       </section>
-      <section id="contacto">
-        <h1>Encontranos en:</h1>
-        <div></div>
+      <div class="title"><h3>Encontranos en:</h3></div>
+      <section id="contactofooter">
+        <div><img src="./images/logo.png" alt="" /></div>
+        <div class="menu">
+          <h2>Menu</h2>
+          <ul>
+            <li>Home</li>
+            <li>Productos</li>
+            <li>Locales</li>
+            <li>Contactos</li>
+          </ul>
+        </div>
+        <div class="menu">
+          <h2>Navegacion</h2>
+          <ul>
+            <li>Preguntas frecuentes</li>
+            <li>Distribuidores</li>
+            <li>Prensa</li>
+            <li>Recetas exclusivas</li>
+          </ul>
+        </div>
+        <div class="redes">
+          <h2>Redes</h2>
+          <ul>
+            <li><img src="./images/Vector-1.svg" alt="" /></li>
+            <li><img src="./images/Vector-2.svg" alt="" /></li>
+            <li><img src="./images/Vector.svg" alt="" /></li>
+          </ul>
+        </div>
+        <div class="ubicacion">
+          <div>
+            <iframe
+              width="100%"
+              height="150"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=es&amp;q=Montes%20de%20oca%202356,%20CABA+(Humaya)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.gps.ie/car-satnav-gps/">Sat Navs</a></iframe
+            >
+          </div>
+        </div>
       </section>
     </main>
     <footer><p>Maquetado por Román Valles - CaC ReactJs</p></footer>
