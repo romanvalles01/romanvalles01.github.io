@@ -493,6 +493,7 @@ footer {
   }
   .descripcion {
     max-width: 80%;
+    margin-right: 0px;
   }
 
   .redes h2 {
