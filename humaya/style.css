@@ -358,6 +358,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.pos-f-t {
+  display: none;
+}
+
 @media only screen and (max-width: 1100px) {
   form div {
     width: 80%;
@@ -404,17 +408,15 @@ footer {
     display: none;
   }
 
-  .redes {
-    padding-bottom: 50px;
-  }
   .redes ul {
+    margin-top: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px 10px;
+    align-items: center;
   }
 
   .redes ul li {
-    width: 100%;
     display: flex;
   }
 
@@ -442,5 +444,47 @@ footer {
   .infoproducto strong {
     font-size: 14px;
     max-width: 90%;
+  }
+
+  .titulo-hero {
+    font-size: 35px;
+  }
+
+  .main-descripcion {
+    font-size: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .pos-f-t {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-color: #232323;
+    z-index: 300;
+  }
+
+  .pos-f-t ul li {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .pos-f-t ul li a {
+    color: #fff;
+  }
+
+  .pos-f-t ul {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    gap: 15px;
+  }
+
+  .logonavres {
+    height: auto;
+    width: 70px;
+    margin-right: 30px;
   }
 }
