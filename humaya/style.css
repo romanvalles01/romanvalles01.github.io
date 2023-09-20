@@ -487,4 +487,11 @@ footer {
     width: 70px;
     margin-right: 30px;
   }
+
+  .titulo-hero {
+    margin-top: 20px;
+  }
+  .descripcion {
+    max-width: 80%;
+  }
 }
