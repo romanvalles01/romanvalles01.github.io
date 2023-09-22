@@ -1,7 +1,7 @@
 const display = document.getElementById("display");
 const buttons = [
-  0,
   ".",
+  0,
   "=",
   "+",
   1,

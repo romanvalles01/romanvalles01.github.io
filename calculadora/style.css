@@ -6,13 +6,29 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
+  background: linear-gradient(
+    324deg,
+    rgba(0, 13, 36, 1) 0%,
+    rgba(158, 76, 151, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 main {
   display: flex;
   flex-direction: column;
-
   max-width: 1000px;
+  width: 220px;
+  height: 320px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 #botonera {
   height: 200px;
@@ -21,15 +37,18 @@ main {
   flex-wrap: wrap-reverse;
   gap: 5px 5px;
   margin-top: 30px;
+  justify-content: center;
 }
 
 button {
+  font-family: "Oswald", sans-serif;
+  color: black;
   display: flex;
   height: 100%;
   width: 100%;
   width: 40px;
   height: 40px;
-  border: 1px solid black;
+  border-style: none;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -47,6 +66,39 @@ button {
 }
 
 #display {
+  text-align: end;
+  margin-top: 10px;
+  height: 30px;
   display: flex;
-  width: fit-content;
+  width: 180px;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: none;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#display[type="text"]:focus {
+  border-style: none;
+  outline: none;
+}
+
+button[value="="] {
+  background-color: #50094a;
+  color: #fff;
+}
+
+button[value="*"],
+[value="+"],
+[value="-"],
+[value="/"],
+[value="."] {
+  background-color: #9e4c97;
+  color: #fff;
 }
