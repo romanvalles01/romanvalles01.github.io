@@ -15,15 +15,12 @@ const buttons = [
   7,
   8,
   9,
-
   "/",
 
   "C",
   "←",
 ];
-
 let res = "";
-
 const botonera = document.getElementById("botonera");
 buttons.forEach((boton) => {
   let modelo = `<button value="${boton}" class="boton">${boton}</button>`;
@@ -34,17 +31,14 @@ buttons.forEach((boton) => {
       if (botonP.value != "=" && botonP.value != "←" && botonP.value != "C") {
         display.value += botonP.value;
       }
-
       if (botonP.value == "C") {
         display.value = "";
       }
-
       if (botonP.value == "←") {
         res = display.value;
         res = res.slice(0, res.length - 1);
         display.value = res;
       }
-
       if (botonP.value == "=") {
         display.value = eval(display.value);
       }
