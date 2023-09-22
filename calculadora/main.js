@@ -30,9 +30,7 @@ buttons.forEach((boton) => {
     botonP.addEventListener("click", () => {
       if (botonP.value != "=" && botonP.value != "←" && botonP.value != "C")
         display.value += botonP.value;
-
       if (botonP.value == "C") display.value = "";
-
       if (botonP.value == "←") {
         res = display.value;
         res = res.slice(0, res.length - 1);
