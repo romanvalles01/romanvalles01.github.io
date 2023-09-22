@@ -28,20 +28,17 @@ buttons.forEach((boton) => {
   const botones = document.querySelectorAll(".boton");
   botones.forEach((botonP) => {
     botonP.addEventListener("click", () => {
-      if (botonP.value != "=" && botonP.value != "←" && botonP.value != "C") {
+      if (botonP.value != "=" && botonP.value != "←" && botonP.value != "C")
         display.value += botonP.value;
-      }
-      if (botonP.value == "C") {
-        display.value = "";
-      }
+
+      if (botonP.value == "C") display.value = "";
+
       if (botonP.value == "←") {
         res = display.value;
         res = res.slice(0, res.length - 1);
         display.value = res;
       }
-      if (botonP.value == "=") {
-        display.value = eval(display.value);
-      }
+      if (botonP.value == "=") display.value = eval(display.value);
     });
   });
 });
