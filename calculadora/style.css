@@ -18,8 +18,8 @@ main {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  width: 220px;
-  height: 320px;
+  width: 270px;
+  height: 400px;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
@@ -32,11 +32,11 @@ main {
 }
 #botonera {
   height: 200px;
-  width: 200px;
+  width: 260px;
   display: flex;
   flex-wrap: wrap-reverse;
   gap: 5px 5px;
-  margin-top: 30px;
+  margin-top: 100px;
   justify-content: center;
 }
 
@@ -46,13 +46,14 @@ button {
   display: flex;
   height: 100%;
   width: 100%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-style: none;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s;
 }
 
 .numero {
@@ -67,10 +68,10 @@ button {
 
 #display {
   text-align: end;
-  margin-top: 10px;
+  margin-top: 20px;
   height: 30px;
   display: flex;
-  width: 180px;
+  width: calc(100% - 80px);
   background: rgba(255, 255, 255, 0.55);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
@@ -89,7 +90,9 @@ button {
   outline: none;
 }
 
-button[value="="] {
+button[value="="],
+[value="C"],
+[value="←"] {
   background-color: #50094a;
   color: #fff;
 }
@@ -101,4 +104,12 @@ button[value="*"],
 [value="."] {
   background-color: #9e4c97;
   color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.9;
 }
