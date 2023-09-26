@@ -74,10 +74,12 @@ nav ul li a {
   border-radius: 50px;
   border-style: none;
   font-size: 20px;
+  transition: all 0.1s;
 }
 
 .btn-conocenos:hover {
   cursor: pointer;
+  background-color: #f38500;
 }
 
 .titulo-hero {
@@ -98,6 +100,8 @@ nav ul li a {
 }
 
 .title {
+  margin: auto;
+  max-width: 1300px;
   width: 100%;
   background-color: #232323;
   height: 60px;
@@ -141,8 +145,7 @@ article img {
   font-size: 26px;
 }
 
-.infoproducto h4,
-strong {
+.infoproducto h4 strong {
   color: #bca177;
 }
 
@@ -159,9 +162,19 @@ strong {
   border-style: none;
   border: 3px solid #bca177;
   margin-bottom: 10px;
+  transition: all 0.1s;
+}
+
+.btn-info:hover {
+  cursor: pointer;
+  background-color: #856b4f;
+  border-color: #856b4f;
+  transform: scale(1.05);
 }
 
 #calidad {
+  margin: auto;
+  max-width: 1300px;
   width: 100%;
   height: 250px;
   display: flex;
@@ -271,6 +284,14 @@ input {
   border: 4px solid #856b4f;
   background-color: #fff;
   color: #856b4f;
+  transition: all 0.1s;
+}
+
+#btnform:hover {
+  cursor: pointer;
+  background-color: #856b4f;
+  transform: scale(1.03);
+  color: #fff;
 }
 
 #recetas {
