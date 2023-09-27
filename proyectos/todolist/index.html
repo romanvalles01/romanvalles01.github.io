@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark List</title>
+    <link
+      rel="shortcut icon"
+      href="./images/iconpage.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div id="menu">
+          <img src="./images/menu.svg" alt="" />
+          <p>!</p>
+        </div>
+        <div id="darklist"><h1 class="tittle">Dark List</h1></div>
+        <div id="darkmode">
+          <button id="darkmodebtn"></button>
+        </div>
+      </nav>
+    </header>
+    <section id="section">
+      <div class="menuOpen" id="menuOpen">
+        <div class="contenedorGif">
+          <img
+            class="imgSelect bonfire"
+            id="imgMenu"
+            src="./images/bonfire.gif"
+            alt=""
+          />
+        </div>
+        <div class="contenedorGif">
+          <img
+            class="imgSelect solaire"
+            id="imgMenu"
+            src="./images/solaire.gif"
+            alt=""
+          />
+        </div>
+        <div class="contenedorGif">
+          <img
+            class="imgSelect scottP"
+            id="imgMenu"
+            src="./images/scottP.gif"
+            alt=""
+          />
+        </div>
+        <div class="contenedorGif">
+          <img
+            class="imgSelect blackmage"
+            id="imgMenu"
+            src="./images/blackMage.gif"
+            alt=""
+          />
+        </div>
+        <div class="contenedorGif">
+          <img
+            class="imgSelect miki"
+            id="imgMenu"
+            src="./images/miki.gif"
+            alt=""
+          />
+        </div>
+        <div class="contenedorGif">
+          <img
+            class="imgSelect miku"
+            id="imgMenu"
+            src="./images/miku.gif"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div id="bonfire" class="bonfire">
+        <div class="gifcontainer">
+          <img id="gifBack" src="./images/bonfire.gif" alt="" />
+        </div>
+        <h1 id="titleBonfire" class="bonfiretxt">Tómate un descanso</h1>
+      </div>
+      <div id="agregarcontainer" class="agregarcontainer">
+        <div class="agregartarea">
+          <div class="containertarea">
+            <h1 class="tittletarea">Ingresa una tarea</h1>
+            <div class="tarea-name">
+              <p class="p-tareamenu">Nombre de la tarea</p>
+              <input
+                maxlength="20"
+                class="input"
+                type="text"
+                name=""
+                id="tareaInput"
+              />
+            </div>
+            <div class="tarea-name">
+              <p class="p-tareamenu">Tipo de tarea</p>
+              <form>
+                <select class="select" id="select" name="tipo de tarea">
+                  <option value="trabajo">Trabajo</option>
+                  <option value="personal">Personal</option>
+                  <option value="domestica">Domestica</option>
+                  <option value="Entretenimiento">Entretenimiento</option>
+                </select>
+              </form>
+            </div>
+            <div class="tarea-name">
+              <p class="p-tareamenu">Descripcion</p>
+              <textarea
+                class="descripcion"
+                name=""
+                id="descripcionTxt"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="prioridad">
+              <p class="p-tareamenu">Prioridad</p>
+              <div class="colores">
+                <input
+                  class="check purpura"
+                  type="radio"
+                  name="colorsito"
+                  id="checkbox"
+                />
+                <input
+                  class="check verde"
+                  type="radio"
+                  name="colorsito"
+                  id="checkbox"
+                />
+                <input
+                  class="check amarillo"
+                  type="radio"
+                  name="colorsito"
+                  id="checkbox"
+                />
+                <input
+                  class="check rojo"
+                  type="radio"
+                  name="colorsito"
+                  id="checkbox"
+                />
+              </div>
+            </div>
+            <div class="botones">
+              <button id="btnCancelar" class="cancelar btn">Cancelar</button>
+              <button id="btnConfirmar" class="agregar btn">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tareas" class="tareas"></div>
+      <div class="btnagregar">
+        <button id="btnagregar">
+          <img id="imgBtnAdd" src="./images/botonagregar.svg" alt="" />
+        </button>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
