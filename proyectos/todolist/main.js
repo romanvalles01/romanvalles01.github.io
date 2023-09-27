@@ -13,9 +13,6 @@ let menuOpen = document.getElementById("menuOpen");
 let imgSelect = document.getElementById("imgSelect");
 let gifBack = document.getElementById("gifBack");
 
-//Storage
-let tareaStorage = [];
-
 //Darkmode
 let section = document.getElementById("section");
 let imgBtnAdd = document.getElementById("imgBtnAdd");
@@ -111,7 +108,7 @@ btnConfirmar.addEventListener("click", () => {
     tareas.style.display = "flex";
     btnAdd.classList.toggle("hidden");
 
-    tareaPendiente = `<div id="idTarea${idTarea}" class="tareaspendientes">
+    let tareaPendiente = `<div id="idTarea${idTarea}" class="tareaspendientes">
   <div class="colortarea ${colorFondo}">
     <img src="${imgTipo}" alt="" />
   </div>
@@ -133,8 +130,6 @@ btnConfirmar.addEventListener("click", () => {
     select.value = "";
 
     console.log(cantidadDeTareas);
-    tareaStorage.push(tareaPendiente);
-    localStorage.setItem("tareasGuardadas", tareaStorage);
   } else {
     alert("falta data jej");
   }
