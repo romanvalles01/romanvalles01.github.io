@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
   </head>
   <body>
@@ -19,37 +25,81 @@
       <p>(c) Microsoft Corporation. Todos los derechos reservados.</p>
       <p>C:\Users\RomanV\portfolio</p>
     </header>
-    <section>
-      <img src="./images/pfp.png" alt="" />
 
-      <div class="about">
-        <h1>{<b>Román Valles</b>_</h1>
-        <h2>Frontend <b>developer</b></h2>
+    <main>
+      <section id="inicio">
+        <img class="imgpfp" src="./images/pfp.png" alt="" />
 
-        <p class="description">
-          Hola! Mi nombre es Román, soy de Puerto General San Martín - Santa Fe.
-          Actualmente estoy cursando mi primer año en Desarrollo de Software. Me
-          gustan mucho los videojuegos tipo souls y tomar fotos :)
-        </p>
-        <div class="icons">
-          <ul>
-            <li>
-              <a
-                target="_blank"
-                id="instagram"
-                href="https://www.instagram.com/roman.valles/"
-              ></a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                id="linkedin"
-                href="https://www.linkedin.com/in/romanvalles/"
-              ></a>
-            </li>
-          </ul>
+        <div class="about">
+          <h1>{<b>Román Valles</b>_</h1>
+          <h2>Frontend <b>developer</b></h2>
+
+          <p class="description">
+            Hola! Mi nombre es Román, soy de Puerto General San Martín - Santa
+            Fe. Actualmente estoy cursando mi primer año en Desarrollo de
+            Software. Me gustan mucho los videojuegos tipo souls y tomar fotos
+            :)
+          </p>
+          <div class="icons">
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  id="instagram"
+                  href="https://www.instagram.com/roman.valles/"
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  id="linkedin"
+                  href="https://www.linkedin.com/in/romanvalles/"
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="proyectos">
+        <div class="row">
+          <div class="item">
+            <p>ToDo List</p>
+            <img src="./images/proyectos/todolist.png" alt="" />
+          </div>
+          <div class="item">
+            <p>IP Info</p>
+            <img src="./images/proyectos/ip.png" alt="" />
+          </div>
+          <div class="item">
+            <p>Clon Google</p>
+            <img src="./images/proyectos/google.png" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="item">
+            <p>Humaya CaC</p>
+            <img src="./images/proyectos/humaya.png" alt="" />
+          </div>
+          <div class="item">
+            <p>Calculadora</p>
+            <img src="./images/proyectos/calculadora.png" alt="" />
+          </div>
+          <div class="item">
+            <a target="_blank" href="https://romanvalles01.github.io/proyectos/kitichat/"><p>Kitichat</p>
+            <img src="./images/proyectos/kitichat.png" alt="" />
+          </div></a>
+            
+        </div>
+      </section>
+      <span class="nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="">Contacto</a></li>
+          <li><a href="">Acerca de mi</a></li>
+        </ul>
+      </span>
+    </main>
   </body>
 </html>
